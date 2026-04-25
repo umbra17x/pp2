@@ -54,7 +54,7 @@ def main():
                     ball.move_right()
 
         screen.fill(WHITE)
-        ball.draw(screen)
+        ball.draw(screen)   
         pygame.display.flip()
 
     pygame.quit()
