@@ -58,7 +58,10 @@ while running:
         player.x -= player_speed
     if keys[pygame.K_RIGHT] and player.right < WIDTH:
         player.x += player_speed
-
+    if keys[pygame.K_UP] and player.top > 0:
+        player.y -= player_speed
+    if keys[pygame.K_DOWN] and player.bottom < HEIGHT:
+        player.y += player_speed
     # Enemy movement
     enemy.y += enemy_speed
     if enemy.top > HEIGHT:
